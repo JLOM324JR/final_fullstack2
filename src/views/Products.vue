@@ -1,11 +1,7 @@
 <template>
     <div>
         <h1>Product List</h1>
-        <ol>
-            <li v-for="item in products" :key="item.id">
-                {{item.id}} {{item.title}} {{item.price}} 
-            </li>
-        </ol>
+        <b-table striped hover :items="products" :fields="fields"></b-table>
     </div>
 </template>
 <script>
@@ -15,7 +11,22 @@ export default {
   data(){
       return {
           message: 'Project2',
-          products: []
+          products: [],
+          fields: [
+              {
+                  key: 'id',
+                  sortable : true
+              },
+              {
+                  key: 'title',
+                  sortable : true
+              },
+              {
+                  key: 'price',
+                  sortable : true,
+                  variant: 'danger'
+              },
+          ],
       }
   },
   mounted () {
