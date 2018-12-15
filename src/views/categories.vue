@@ -2,8 +2,8 @@
     <div>
         <h1>Categoties List</h1>
         <b-row>
-      <b-col md="6" class="my-1">
-        <b-form-group horizontal label="Filter" class="mb-0">
+      <b-col md="10" class="my-1">
+        <b-form-group horizontal class="mb-2">
           <b-input-group>
             <b-form-input v-model="filter" placeholder="Type to Search" />
             <b-input-group-append>
@@ -30,7 +30,7 @@ export default {
     return {
       message: "Project2",
       categories: [],
-      pageSize: 10,
+      pageSize: 4,
       pageIndex: 1,
       filter: null,
       fields: [
