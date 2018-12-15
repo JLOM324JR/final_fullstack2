@@ -13,7 +13,7 @@
         </b-form-group>
       </b-col>
         </b-row>
-        <b-table striped hover 
+        <b-table  striped hover 
         :items="categories" 
         :fields="fields" 
         :filter="filter"
