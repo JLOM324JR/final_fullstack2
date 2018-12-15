@@ -30,7 +30,7 @@ export default {
     return {
       message: "Project2",
       categories: [],
-      pageSize: 4,
+      pageSize: 10,
       pageIndex: 1,
       filter: null,
       fields: [
